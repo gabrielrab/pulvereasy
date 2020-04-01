@@ -73,6 +73,22 @@ function App() {
         </div>
       </section>
 
+      <section className="tech">
+        <h1>
+          Somos representantes exclusivos fã Imunizadora Hoffman de igrejinha e
+          da Desinservice de Santa Maria.
+        </h1>
+        <iframe
+          id="ytplayer"
+          type="text/html"
+          width="640"
+          height="360"
+          src="http://www.youtube.com/embed/CPqDsFkBz9g?autoplay=1&origin=http://example.com"
+          frameborder="0"
+          title="youtube video"
+        />
+      </section>
+
       <footer>
         <h1>Contato</h1>
         <p>
