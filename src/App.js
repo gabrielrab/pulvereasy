@@ -92,6 +92,7 @@ function App() {
       <footer>
         <h1>Contato</h1>
         <p>
+          contato@pulvereasy.com.br <br />
           Atendimento on-line durante a quarentena no (54) 99219-1005 ou (54)
           35360438
           <br />
