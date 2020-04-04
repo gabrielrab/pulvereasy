@@ -72,7 +72,7 @@ header img:hover{
 }
 
 .what-we-do div h1{
-  font-size: 32px;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 
@@ -93,6 +93,10 @@ header img:hover{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.tech h1{
+  margin-bottom: 20px;
 }
 
 .apply{
@@ -121,4 +125,9 @@ footer{
   width: 100vw;
   padding: 15px;
   text-align: center;
+}
+
+footer img{
+  max-width: 500px;
+  margin-bottom: 30px;
 }

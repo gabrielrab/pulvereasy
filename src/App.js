@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 
 import logo from "./assets/logo.png";
+import banner from "./assets/img-footer.jpeg";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       </section>
       <section className="what-we-do">
         <div>
-          <h1>Oque fazemos ?</h1>
+          <h1>A solução</h1>
           <p>
             Desinfecção através através de pulverização e higienização de
             ambientes internos e externos contra o Coronavírus.
@@ -75,7 +76,7 @@ function App() {
 
       <section className="tech">
         <h1>
-          Somos representantes exclusivos fã Imunizadora Hoffman de igrejinha e
+          Somos representantes exclusivos da Imunizadora Hoffman de igrejinha e
           da Desinservice de Santa Maria.
         </h1>
         <iframe
@@ -90,6 +91,7 @@ function App() {
       </section>
 
       <footer>
+        <img src={banner} alt="banner" />
         <h1>Contato</h1>
         <p>
           contato@pulvereasy.com.br <br />
