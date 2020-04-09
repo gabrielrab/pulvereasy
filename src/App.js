@@ -6,6 +6,8 @@ import banner from "./assets/img-footer.jpeg";
 
 import { FaWhatsapp, FaFacebook } from "react-icons/fa";
 
+import api from "./service/api";
+
 function App() {
   const [user, setUser] = useState([]);
 
@@ -18,7 +20,19 @@ function App() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log("user", user);
+    try {
+      // eslint-disable-next-line no-unused-vars
+      const resposne = await api.post("/sendmail", {
+        name: user.name,
+        email: user.email,
+        tel: user.tel,
+        know: "Pelo nosso site",
+        subject: user.subject,
+      });
+      alert("Enviado com sucesso");
+    } catch (error) {
+      alert("Erro ao enviar a mensagem");
+    }
   };
 
   return (
