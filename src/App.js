@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 import logo from "./assets/logo.png";
 import banner from "./assets/img-footer.jpeg";
 
-import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaWhatsapp, FaFacebook } from "react-icons/fa";
 
 function App() {
+  const [user, setUser] = useState([]);
+
+  const handleChange = (event) => {
+    const auxValues = { ...user };
+
+    auxValues[event.target.name] = event.target.value;
+    setUser(auxValues);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    console.log("user", user);
+  };
+
   return (
     <>
       <header>
@@ -125,11 +139,35 @@ function App() {
               Av.Rubem Bento Alves 8078 sobreloja
             </p>
           </div>
-          <form class="form" action="" method="post">
-            <input type="text" placeholder="Nome Completo" />
-            <input type="email" placeholder="Email" />
-            <input type="tel" placeholder="Telefone" />
-            <textarea type="text" placeholder="Mensagem" />
+          <form class="form" onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Nome Completo"
+              required
+              onChange={handleChange}
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+              onChange={handleChange}
+            />
+            <input
+              type="tel"
+              name="tel"
+              placeholder="Telefone"
+              required
+              onChange={handleChange}
+            />
+            <textarea
+              type="text"
+              name="subject"
+              placeholder="Mensagem"
+              required
+              onChange={handleChange}
+            />
             <button type="submit">Enviar</button>
           </form>
         </div>
