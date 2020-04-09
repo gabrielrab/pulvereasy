@@ -132,7 +132,7 @@ function App() {
                     href="https://api.whatsapp.com/send?phone=5554992191005&text=Ol%C3%A1%2C%20vim%20pelo%20Site%20http%3A%2F%2Fpulvereasy.com.br%2F"
                     target="_blank"
                   >
-                    <FaWhatsapp class="logos" size={32} color="#29a672" />
+                    <FaWhatsapp className="logos" size={32} color="#29a672" />
                   </a>
                 </li>
                 <li>
@@ -140,7 +140,7 @@ function App() {
                     href="https://www.facebook.com/PulverEasy/?__xts__[0]=68.ARD_Rxl1b7UDjn1xW4M5bjKiwPhznqqYbDL2eHLvn_1Lkzz52gMH43_yUsCNGSOxAj6nVg11EywCwpLO-6LL-dpE8F09WQgh5cPN4GkfmSq0hF1a00e7kFMxf8RsmbuhmN82XZDjkaoRetxhDAqrNZtZpfmsrppPyTYTOFKCntWR1EK03vwqQSeIUu4sFxjaWhwgfMbqV_YkdGfBBBDQ1QlSaE5gwf40RPYgl11c3j_-4wICfvqh7bdUuc7RxMSrTPrDcT98O-z_kgDV2B7g_YQalrBAYaB7gldX6K1jRqhuDwS6ms5gckyUps1aQ9q1m3DRzrHkqjuIDJOvWeJQI3ZPSg"
                     target="_blank"
                   >
-                    <FaFacebook class="logos" size={32} color="#29a672" />
+                    <FaFacebook className="logos" size={32} color="#29a672" />
                   </a>
                 </li>
               </ul>
@@ -153,7 +153,7 @@ function App() {
               Av.Rubem Bento Alves 8078 sobreloja
             </p>
           </div>
-          <form class="form" onSubmit={handleSubmit}>
+          <form className="form" onSubmit={handleSubmit}>
             <input
               type="text"
               name="name"
