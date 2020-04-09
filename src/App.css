@@ -136,11 +136,11 @@ footer {
   display: flex;
   margin-top: 20px;
   width: 100vw;
-  padding: 15px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #29a672;
+  
 }
 
 footer img {
@@ -151,6 +151,7 @@ footer img {
 }
 
 .contact {
+  background-color: #213b66;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -196,11 +197,13 @@ form p {
 form textarea {
   width: 100%;
   height: 12em;
-  color: #000;
+  color: #29a672;
   margin-top: 1em;
-  border: 2px solid #29a672;
+  border: 1px solid #29a672;
   border-radius: 4px;
-  font-size: 1em;
+  font-size: 0.9em;
+  font-weight: bolder;
+  padding: 5px;
   resize: none;
 }
 
@@ -210,23 +213,28 @@ footer .form input {
   height: 3em;
   color: #000;
   margin-top: 1em;
-  border: 2px solid #29a672;
+  border: 1px solid #29a672;
   border-radius: 4px;
-  font-size: 1em;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 0.9em;
 }
 
-::placeholder {
+footer .form input::placeholder {
+  color: #29a672;
+  opacity: 1;
+}
+
+footer .form textarea::placeholder {
   color: #29a672;
   opacity: 1;
 }
 
 footer .form button {
-  border: 2px solid #29a672;
-  background-color: white;
-  color: #29a672;
+  background-color: #29a672;
+  color: white;
   width: 100%;
-  max-width: 200px;
-  height: 2.7em;
+  padding: 0.5em;
   border-radius: 6px;
   margin-top: 10px;
   cursor: pointer;
