@@ -18,6 +18,7 @@ select {
 body {
   font-family: "Roboto";
   background-color: #f9fafb;
+  overflow-x: hidden;
 }
 
 header {
@@ -140,7 +141,6 @@ footer {
   justify-content: center;
   align-items: center;
   color: #29a672;
-  
 }
 
 footer img {
